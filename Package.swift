@@ -52,8 +52,6 @@ let package = Package(
             name: "JavaMath",
             dependencies: [
               .product(name: "JavaKit", package: "swift-java"),
-              // Note: Uncomment the following to unbreak test.swift
-              // .product(name: "JavaKitJar", package: "swift-java"),
             ],
             swiftSettings: [
               .unsafeFlags(["-I\(javaIncludePath)", "-I\(javaPlatformIncludePath)"])
